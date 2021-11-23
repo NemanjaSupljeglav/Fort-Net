@@ -1,9 +1,39 @@
-.filter-wrapper{
-    background: white;
+.filter-wrapper {
+  display: flex;
+  flex-direction: column;
 }
-.filter-object-type{
-    padding: 12px 8px;
-    border: rgb(151, 151, 151) solid 3px;
-    border-radius: 5px;
-    font-weight: bold;
+.filter-object-type {
+  padding: 12px 8px;
+  border: rgb(212, 212, 212) solid 3px;
+  border-radius: 5px;
+  font-weight: bold;
+  width: max-content;
+  margin-left: 15px;
+  margin-bottom: -5px;
+  cursor: pointer;
+  color: rgb(71, 71, 71);
+}
+.filter-object-type-select {
+  padding: 12px 8px;
+  border: rgb(240, 122, 25) solid 3px;
+  border-radius: 5px;
+  font-weight: bold;
+  width: max-content;
+  margin-left: 15px;
+  margin-bottom: -5px;
+  color: white;
+  cursor: pointer;
+  background: rgb(240, 122, 25);
+}
+.filter-type-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+.filter-title {
+  margin-left: 15px;
+  margin-bottom: -5px;
+  color: rgb(71, 71, 71);
+}
+.filter-object-type:hover {
+  border: rgb(100, 100, 100) solid 3px;
 }

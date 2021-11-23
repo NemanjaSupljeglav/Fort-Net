@@ -1,13 +1,13 @@
 .posts-card-maping {
   display: grid;
   grid-gap: 15px;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
-.filter-posts-home{
+.filter-posts-home {
   width: 350px;
 }
-.home-page-wrapper{
+.home-page-wrapper {
   display: grid;
   grid-gap: 15px;
-grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 5fr;
 }

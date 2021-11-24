@@ -1,0 +1,12 @@
+Swagger: https://staging-api.fort-net.org/index.html
+Web app: https://fort-net.org/svi-objekti/
+React app architecture example: https://gitlab.com/saurabhshah231/reactjs-myapp
+Other examples: https://maxrozen.com/examples-of-large-production-grade-open-source-react-apps#example-apps
+
+https://github.com/oldboyxx/jira_clone/blob/master/client/src/Project/index.jsx
+
+https://maxrozen.com/examples-of-large-production-grade-open-source-react-apps#example-apps
+
+api
+
+https://api.fort-net.org/index.html

@@ -3,7 +3,7 @@ function Filter(props) {
   /*postType*/
   return (
     <div className="filter-wrapper">
-      <h2 className="filter-title">Tip</h2>
+      <h2 className="filter-title">Type</h2>
       <div className="filter-type-wrapper">
         <p
           className={
@@ -15,7 +15,7 @@ function Filter(props) {
             props.setPostType(0);
           }}
         >
-          Sve
+          All
         </p>
         <p
           className={

@@ -1,0 +1,14 @@
+.Search-wrapper {
+  color: red;
+}
+.Search-input {
+  margin-left: 15px;
+  position: relative;
+  top: -5px;
+  left: 313px;
+  padding-left: 10px;
+  width: 265px;
+  height: 25px;
+  border-radius: 7px;
+  border-color: rgb(160, 160, 160);
+}

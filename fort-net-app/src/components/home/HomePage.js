@@ -1,5 +1,5 @@
 import PostCard from "../postsCard/PostCard";
-import "./homePage.scss";
+import "./homePage.css";
 import { useState } from "react";
 import { useEffect } from "react";
 import Filter from "../filter/Filter";
@@ -8,6 +8,9 @@ function HomePage() {
   const [post, setPost] = useState([]);
   const [postLoad, setPostLoad] = useState(false);
   const [postType, setPostType] = useState(0);
+  const [pageNum, setPageNum] = useState(100);
+  const [skipPage, setSkipPage] = useState(0);
+  const [search, setSearch] = useState("");
 
   const ObjectType = [
     "Object",
@@ -16,10 +19,12 @@ function HomePage() {
     "Heritage",
     "Tourism",
   ];
-
+  console.log("search");
+  console.log(search.target);
+  console.log("search");
   const getPosts = async (type = null) => {
     const res = await fetch(
-      "https://staging-api.fort-net.org/Objects?Skip=1&Take=90"
+      `https://api.fort-net.org/Objects?Text=${search}&Skip=${skipPage}&Take=${pageNum}`
     );
     const posts = await res.json();
 
@@ -32,11 +37,11 @@ function HomePage() {
   };
   useEffect(() => {
     getPosts();
-  }, [postType]);
+  }, [postType, search]);
 
   return (
     <div className="home-page-wrapper-all">
-      {/*<Search ></Search>*/}
+      <Search setSearch={setSearch}></Search>
       <div className="home-page-wrapper">
         <Filter
           className="filter-posts-home"

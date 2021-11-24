@@ -1,4 +1,4 @@
-import "./filter.scss";
+import "./filter.css";
 function Filter(props) {
   /*postType*/
   return (

@@ -1,4 +1,4 @@
-import "./postCard.scss";
+import "./postCard.css";
 
 function PostCard(props) {
   const ObjectType = [

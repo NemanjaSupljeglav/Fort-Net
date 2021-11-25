@@ -12,7 +12,7 @@ function Filter(props) {
               : "filter-object-type"
           }
           onClick={() => {
-            props.setPostType(0);
+            props.setPostType("");
           }}
         >
           All
